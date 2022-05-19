@@ -1,0 +1,51 @@
+:root {
+    --primary-color: #FFD211;
+    --seconary-color: rgb(0, 0, 0);
+    /* --header-color: rgb(206, 81, 43); */
+  }
+  
+  body {
+    position: relative;
+    min-height: 100vh;
+    font-family: sans-serif; 
+  }
+
+  /* ------------- HOMEPAGE ------------- */
+
+.homepage-title {
+  text-align: center;
+  font-size: 5vw;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#homepage-buttons {
+  text-align: center;
+}
+
+#homepageBody {
+  background-image: url(../assets/images/dinner7-2.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.enterButton {
+  border: 0px;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  /* padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 1%; */
+  /* margin-top: 40%; */
+  padding: 1% 3% 1% 3%;
+
+}
+  
+.enterButton:hover {
+  transform: scale(1.1);
+  background-color: #FFD211;
+}
+
