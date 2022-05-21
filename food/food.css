@@ -8,12 +8,18 @@ body {
 /* ------------- HEADER/ NAV ------------- */
 
 header {
-  margin-left: 5%;
-  padding-bottom: 10%;
-  /* background-image: url(../assets/images/farm.jpeg); */
-  /* width: 88%;
-  height: 300px;
-  margin-bottom: 1vw; */
+  padding-top: 5%;
+  padding-bottom: 5%;
+  /* background-color: orange; */
+  width: 100%;
+}
+
+#foodImg {
+  display:flex;
+  justify-content: center;
+}
+.foodImg {
+  width: 400px;
 }
 
 .nav {
@@ -53,19 +59,6 @@ header nav a {
 .is-hoverable .navbar-item:hover {
   color: #FFD211;
 }
-
-
-/* #banner-food {
-  background-image: url(../assets/images/farm.jpeg);
-  object-fit: center;
-  background-position: center;
-  height: 300px;
-  width: 100%;
-  margin-bottom: 1vw;
-  
-}
- */
-
 
 /* --------------- CHECKBOX ---------------  */
 .checkbox {

@@ -7,7 +7,6 @@
   body {
     position: relative;
     min-height: 100vh;
-    font-family: sans-serif;
   }
 
   header {
@@ -23,7 +22,7 @@
 #homepageImg {
   display: flex;
   justify-content: center;
-  padding-top: 7.5%;
+  padding-top: 5.5%;
   object-fit: contain;
   padding-bottom: 2%;
 }
@@ -74,7 +73,8 @@
 } */
 
 .homepageImg {
-  height: 550px;
+  padding-top: 3%;
+  width: 800px;
 }
 
 .enterButton {
@@ -106,6 +106,7 @@ footer {
 .footer-copyright {
   padding-right: 2%;
   font-size: 12px;
+  font-family: sans-serif;
 }
 
 .footer-icons {
