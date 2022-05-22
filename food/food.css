@@ -6,12 +6,41 @@ body {
   font-family: sans-serif; 
 }
 /* ------------- HEADER/ NAV ------------- */
-
 header {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  /* padding-top: 5%;
+  padding-bottom: 5%; */
   /* background-color: orange; */
   width: 100%;
+}
+
+.pageTitle {
+  text-align: center;
+  padding-top: .5%;
+  padding-bottom: .5%;
+  font-size: 40px;
+  font-family: georgia, arial, helvetica;
+  color: black;
+  border-bottom: 1px solid rgb(196, 193, 193);
+}
+
+.foodIndexStart {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 5%;
+}
+
+.entryText{
+  font-family: georgia;
+  text-align: center;
+  line-height: 2.0;
+  padding-top: 20%;
+  font-size: 20px;
+  color: black;
+}
+
+.downArrow {
+  padding-top: 15%;
+  height: 300px;
 }
 
 #foodImg {
@@ -19,6 +48,7 @@ header {
   justify-content: center;
 }
 .foodImg {
+  padding-top: 4.5%;
   width: 400px;
 }
 
@@ -54,6 +84,8 @@ header nav a {
   
 .navButton {
   opacity: .5;
+  border: none;
+  background-color: white;
 }
   
 .is-hoverable .navbar-item:hover {
@@ -61,6 +93,10 @@ header nav a {
 }
 
 /* --------------- CHECKBOX ---------------  */
+
+.container {
+  padding-bottom: 10%;
+}
 .checkbox {
  padding-top: 2%
 }
@@ -108,6 +144,11 @@ header nav a {
   padding-left: 5%;
 }
 
+.cuisineOptions {
+  display: flex;
+  flex-direction: column;
+}
+
 
 main {
   display: flex;
@@ -119,6 +160,10 @@ main {
 /* #results {
   padding-top: 20%;
 } */
+
+.message-header {
+  background-color: white !important;
+}
 
 /* --------------- FOOTER ---------------  */
 

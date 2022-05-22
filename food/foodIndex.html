@@ -12,15 +12,22 @@
 <body>
      <!-- Navigation -->
      <header>
-        <div id="foodImg">
+         <h1 class="pageTitle">Dinner & Drinks</h1>
+        <div class="foodIndexStart">
+            <h2 class="entryText">
+                Choose a cuisine, check applicable <br>
+                dietary restrictions & browse recipes<br>
+                <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
+            </h2>
             <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg">
         </div> 
+
         <nav>
             <div class="dropdown is-right is-hoverable">
                 <div class="dropdown-trigger">
-                    <button class="button navButton" aria-haspopup="true" aria-controls="dropdown-menu4">
+                    <button class="navButton" aria-haspopup="true" aria-controls="dropdown-menu4">
                         <span class="icon is-small">
-                            <i class="fas fa-angle-down" aria-hidden="true"></i>
+                            <i class="fa-solid fa-bars"></i>
                         </span>
                     </button>
                 </div>
@@ -43,14 +50,14 @@
  <!-- Main Form -->
  <main>
  <section class="container">
-  
-    <div id="form">
+  <div id="form">
       <div class="options-container">
-        <form action="#">
-          <div class="foodOptions">
-              <h2 class="is-size-6-mobile is-size-4 form-title">
+            <form action="#">
+         <div class="foodOptions">
+             <div class="cuisineOptions">
+              <h3 class="is-size-6-mobile is-size-4 form-title">
                  CUISINE
-              </h2>
+              </h3>
               <label class="checkbox">
                  <input type="checkbox" class="cuisine" id="mexican" value="mexican">
                     <span class="allOptions">Mexican </span>
@@ -83,6 +90,8 @@
                  <input type="checkbox" class="cuisine" id="mediterranean" value="mediterranean">
                  Mediterranean
               </label>
+              <div class="lifestyleOptions">
+              </div>
               <h2 class="is-size-6-mobile is-size-4 form-title pt-3">LIFESTYLE</h2>
               <label class="checkbox">
                   <input type="checkbox" class="lifestyle" id="ketogenic" value="ketogenic">
@@ -109,23 +118,20 @@
                       value="glutenFree">
                   Gluten Free
               </label>
+              </div>
             <!-- display the results as cards -->
         </div>
+    </div>
+    </div>  
         <button type="submit" class="button is-small mt-4" id="search_food">
          <h3>LET'S EAT!</h3>
      </button>
-      </section>
+</section>
+ 
     <article id="results" class="column is-three-fifths">
       <div class="message-header">
           <p>Get started!</p>
       </div>
-      <div class="message-body subtitle">
-          Choose some dishes and dietary options to see what's available. Click the favorites button to save
-          to your favorites page.
-          <br />
-          <i class="fa-solid fa-utensils"></i>
-      </div>
-      <!-- <div id="banner-food"></div> -->
   </article>
 </main>  
 <!-- Footer -->
