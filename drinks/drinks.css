@@ -8,7 +8,10 @@ body {
 
 /* ------------- HEADER/NAV ------------- */
 header {
-    width: 100%;
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  z-index: 2;
 }
 
 .pageTitle {
@@ -17,21 +20,21 @@ header {
     padding-bottom: .5%;
     font-size: 40px;
     font-family: georgia, arial, helvetica;
-    color: black;
-    border-bottom: 1px solid rgb(196, 193, 193);
+    color: white;
   }
   
   .foodIndexStart {
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 5%;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
   }
   
   .entryText{
     font-family: georgia;
     text-align: center;
     line-height: 2.0;
-    padding-top: 20%;
+    padding-top: 40%;
     font-size: 20px;
     color: black;
   }
@@ -45,9 +48,24 @@ header {
     display:flex;
     justify-content: center;
   }
+
   .drinkImg {
-    padding-top: 4.5%;
-    width: 400px;
+    margin-top: 10%;
+    width: 450px;
+    opacity: 0;
+    animation: fadeinup ease 0.4s forwards;  
+    animation-delay: .2s;
+  }
+
+  @keyframes fadeinup {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+  
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
   }
   
   .nav {
@@ -81,24 +99,35 @@ header {
   } 
     
   .navButton {
-    opacity: .5;
     border: none;
-    background-color: white;
+    color: white;
+    background-color:transparent;
   }
     
   .is-hoverable .navbar-item:hover {
     color: #FFD211;
   }
 
- 
+ /* --------------- CHECKBOX ---------------  */
+
 .container {
     padding-bottom: 20%;
   }
 
-#food_options {
-    padding-top: 10%;
+.form-title {
+  padding-bottom: 2%;
 }
 
+#food_options {
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+label.radio {
+  margin-left: 0% !important;
+  padding-bottom: 2%;
+}
 /* --------------- BUTTONS---------------  */
 .button {
     letter-spacing: 2px;
@@ -117,26 +146,17 @@ header {
   }
   
   /* --------------- RESULTS ---------------  */
-  /* #results {
-    padding-top: 20%;
-  } */
-  
   .message-header {
     background-color: white !important;
   }
   
 /* --------------- RESULTS ---------------  */
-/* #results {
-  padding-top: 20%;
-} */
 
 .message-header {
     background-color: white !important;
   }
   
-
 /* --------------- FOOTER ---------------  */
-
 footer {
     background-color: transparent;
     position: absolute;

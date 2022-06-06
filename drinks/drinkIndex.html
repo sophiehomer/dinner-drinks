@@ -13,15 +13,6 @@
     <!-- Navigation -->
     <header>
         <h1 class="pageTitle">Dinner & Drinks</h1>
-       <div class="foodIndexStart">
-           <h2 class="entryText">
-               Choose your preffered alcohol <br>
-                & browse cocktail recipes<br>
-               <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
-           </h2>
-           <img src="../assets/images/drinks.jpg" class="drinkImg" alt="drinkImg">
-       </div> 
-
        <nav>
            <div class="dropdown is-right is-hoverable">
                <div class="dropdown-trigger">
@@ -37,10 +28,10 @@
                                <a class="navbar-item" href="../home/index.html">HOME</a>
                            </div>
                            <div class="dropdown-item">
-                               <a class="navbar-item" href="../drinks/drinkIndex.html">DRINKS</a>
+                               <a class="navbar-item" href="../food/foodIndex.html">FOOD</a>
                            </div>
                            <div class="dropdown-item">
-                               <a class="navbar-item" href="../favorites/favorites.html">FAVOIRTES</a>
+                               <a class="navbar-item" href="../favorites/favorites.html">FAVORITES</a>
                            </div>
                        </div>
                    </div>
@@ -49,39 +40,47 @@
    </header>
      <!-- Main -->
      <main class="container">
+        <div class="foodIndexStart">
+            <h2 class="entryText">
+                Choose your preffered alcohol <br>
+                 & browse cocktail recipes<br>
+                <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
+            </h2>
+            <img src="../assets/images/drinks.jpg" class="drinkImg" alt="drinkImg">
+        </div> 
         <div class="columns">
             <aside class="column">
                 <div id="form">
                     <div class="options-container">
                         <form action="">
                             <div id="food_options">
-                                <div class="block">
+                                <!-- <div class="container"> -->
                                     <h2 class="is-size-5-mobile is-size-4 is-underlined form-title">Liquors</h2>
-                                    <label class="radio mx-3  mt-5">
+                                    <label class="radio">
                                         <input type="radio" name="alcohol" id="tequila" value="tequila">
                                         Tequila
                                     </label>
-                                    <label class="radio mx-3 pt-3">
-                                        <input type="radio" name="alcohol" id="whiskey" value="whiskey">
+                                    <label class="radio">
+                                      <input type="radio" name="alcohol" id="whiskey" value="whiskey">
                                         Whiskey
                                     </label>
-                                    <label class="radio mx-3 pt-3">
-                                        <input type="radio" name="alcohol" id="gin" value="gin">
+                                    <label class="radio">
+                                      <input type="radio" name="alcohol" id="gin" value="gin">
                                         Gin
                                     </label>
-                                    <label class="radio mx-3 pt-3">
-                                        <input type="radio" name="alcohol" id="scotch" value="scotch">
+                                    <label class="radio">
+                                      <input type="radio" name="alcohol" id="scotch" value="scotch">
                                         Scotch
                                     </label>
-                                    <label class="radio mx-3 pt-3">
-                                        <input type="radio" name="alcohol" id="vodka" value="vodka">
+                                    <label class="radio">
+                                      <input type="radio" name="alcohol" id="vodka" value="vodka">
                                         Vodka
                                     </label>
-                                    <label class="radio mx-3 pt-3 mb-4">
+                                    <label class="radio">
                                         <input type="radio" name="alcohol" id="rum" value="rum">
                                         Rum
                                     </label>
-                                </div>
+                                <!-- </div> -->
                             </div>
                             <button type="submit" class="button is-small mt-4" id="search_drinks">
                                 <h3>LET'S DRINK!</h3>

@@ -13,20 +13,11 @@
      <!-- Navigation -->
      <header>
          <h1 class="pageTitle">Dinner & Drinks</h1>
-        <div class="foodIndexStart">
-            <h2 class="entryText">
-                Choose a cuisine, check applicable <br>
-                dietary restrictions & browse recipes<br>
-                <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
-            </h2>
-            <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg">
-        </div> 
-
         <nav>
             <div class="dropdown is-right is-hoverable">
                 <div class="dropdown-trigger">
                     <button class="navButton" aria-haspopup="true" aria-controls="dropdown-menu4">
-                        <span class="icon is-small">
+                        <span class="icon">
                             <i class="fa-solid fa-bars"></i>
                         </span>
                     </button>
@@ -40,7 +31,7 @@
                                 <a class="navbar-item" href="../drinks/drinkIndex.html">DRINKS</a>
                             </div>
                             <div class="dropdown-item">
-                                <a class="navbar-item" href="../favorites/favorites.html">FAVOIRTES</a>
+                                <a class="navbar-item" href="../favorites/favorites.html">FAVORITES</a>
                             </div>
                         </div>
                     </div>
@@ -49,84 +40,92 @@
     </header>
  <!-- Main Form -->
  <main>
- <section class="container">
-  <div id="form">
+    <div class="foodIndexStart">
+        <h2 class="entryText">
+            Choose a cuisine, check applicable <br>
+            dietary restrictions & browse recipes<br>
+            <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
+        </h2>
+        <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg">
+    </div> 
+ <aside class="container">
+  <section id="form">
       <div class="options-container">
             <form action="#">
-         <div class="foodOptions">
-             <div class="cuisineOptions">
-              <h3 class="is-size-6-mobile is-size-4 form-title">
+              <div id="food_options">
+                <div class="cuisineOptions">
+                <h3 class="is-size-6-mobile is-size-4 form-title">
                  CUISINE
-              </h3>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="mexican" value="mexican">
-                    <span class="allOptions">Mexican </span>
+                </h3>
+                <label class="radio">
+                 <input type="radio" class="cuisine" id="mexican" value="mexican">
+                    Mexican 
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="american" value="american">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="american" value="american">
                  American
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="italian" value="italian">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="italian" value="italian">
                  Italian
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="japanese" value="japanese">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="japanese" value="japanese">
                  Japanese
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="chinese" value="chinese">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="chinese" value="chinese">
                  Chinese
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="greek" value="greek">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="greek" value="greek">
                  Greek
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="thai" value="thai">
+              <label class="radio">
+                 <input type="radio" class="cuisine" id="thai" value="thai">
                  Thai
               </label>
-              <label class="checkbox">
-                 <input type="checkbox" class="cuisine" id="mediterranean" value="mediterranean">
+              <!-- <label class="radio">
+                 <input type="radio" class="cuisine" id="mediterranean" value="mediterranean">
                  Mediterranean
-              </label>
+              </label> -->
             </div>
-              <div class="lifestyleOptions">
-              <h2 class="is-size-6-mobile is-size-4 form-title pt-3">LIFESTYLE</h2>
-              <label class="checkbox">
-                  <input type="checkbox" class="lifestyle" id="ketogenic" value="ketogenic">
+            <div class="lifestyleOptions">
+              <h2 class="is-size-6-mobile is-size-4 form-title">LIFESTYLE</h2>
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="ketogenic" value="ketogenic">
                   Ketogenic
               </label>
-              <label class="checkbox">
-                  <input type="checkbox" class="lifestyle" id="paleo" value="paleo">
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="paleo" value="paleo">
                   Paleo
               </label>
-              <label class="checkbox">
-                  <input type="checkbox" class="lifestyle" id="pescetarian" value="pescetarian">
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="pescetarian" value="pescetarian">
                   Pescetarian
               </label>
-              <label class="checkbox">
-                  <input type="checkbox" class="lifestyle" id="vegetarian" value="vegetarian">
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="vegetarian" value="vegetarian">
                   Vegetarian
               </label>
-              <label class="checkbox">
-                  <input type="checkbox" class="lifestyle" id="vegan" value="vegan">
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="vegan" value="vegan">
                   Vegan
               </label>
-              <label class="checkbox mb-4">
-                  <input type="checkbox" class="lifestyle" id="glutenFree"
+              <label class="radio">
+                  <input type="radio" class="lifestyle" id="glutenFree"
                       value="glutenFree">
                   Gluten Free
               </label>
-              </div>
+            </div>
             <!-- display the results as cards -->
         </div>
-    </div>
+    </section>
     </div>  
-        <button type="submit" class="button is-small mt-4" id="search_food">
+        <button type="submit" class="searchButton" id="search_food">
          <h3>LET'S EAT!</h3>
      </button>
-</section>
+    </aside>
  
     <article id="results" class="column is-three-fifths">
       <div class="message-header">
@@ -151,9 +150,6 @@
        <h4>&copy; 2022 Dinner & Drinks</h4>
    </div>
 </footer>
-
-
    <script src="../drinks/drinkIndex.js"></script>
 </body>
-
 </html>

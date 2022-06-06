@@ -1,0 +1,88 @@
+/* ------------- BODY ------------- */
+body {
+    min-height: 100vh;
+    font-family: sans-serif; 
+  }
+  /* ------------- HEADER/ NAV ------------- */
+  header {
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    z-index: 2;
+  }
+  
+  .nav {
+    width: 100%;
+  }
+    
+  nav h1 {
+    color: var(--secondary-color);
+    font-family: sans-serif;
+  }
+    
+  .navbar-item, .logo {
+    color: var(--seconary-color);
+    font-family: sans-serif;
+  }
+    
+  .dropdown {
+    margin: 0;
+  }
+    
+  header nav {
+    position: fixed;
+    margin-right: 20px;
+    right: 0;
+    top: 20px;
+  }
+    
+  header nav a {
+    color: black;
+    font-family: sans-serif;
+  } 
+    
+  .navButton {
+    border: none;
+    color: white;
+    background-color:transparent;
+  }
+    
+  .is-hoverable .navbar-item:hover {
+    color: #FFD211;
+  }
+  
+  .pageTitle {
+    text-align: center;
+    padding-top: .5%;
+    padding-bottom: .5%;
+    font-size: 40px;
+    font-family: georgia, arial, helvetica;
+    color: white;
+  }
+
+
+/* --------------- FOOTER ---------------  */
+
+footer {
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  padding: 0% !important;
+  margin: 0% !important;
+}
+
+.footer-copyright {
+  padding-right: 2%;
+  font-size: 12px;
+  font-family: sans-serif;
+}
+
+.footer-icons {
+  color: black;
+}
+
+.footer-icons:hover {
+  color: #FFD211;
+}
+
