@@ -39,23 +39,19 @@
         </nav>
    </header>
      <!-- Main -->
-     <main class="container">
+     <main class="mainContainer">
+        <aside class="aside">
         <div class="foodIndexStart">
-            <h2 class="entryText">
-                Choose your preffered alcohol <br>
-                 & browse cocktail recipes<br>
-                <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
-            </h2>
-            <img src="../assets/images/drinks.jpg" class="drinkImg" alt="drinkImg">
-        </div> 
-        <div class="columns">
-            <aside class="column">
+            <div class="entryTextDiv">
+                <h2 class="entryText">
+                    Select preferred liquor & browse recipes below <br>
+                </h2>
+            </div>
                 <div id="form">
                     <div class="options-container">
                         <form action="">
                             <div id="food_options">
-                                <!-- <div class="container"> -->
-                                    <h2 class="is-size-5-mobile is-size-4 is-underlined form-title">Liquors</h2>
+                                    <h2 class="is-size-5-mobile is-size-5 form-title">LIQUOR</h2>
                                     <label class="radio">
                                         <input type="radio" name="alcohol" id="tequila" value="tequila">
                                         Tequila
@@ -80,20 +76,24 @@
                                         <input type="radio" name="alcohol" id="rum" value="rum">
                                         Rum
                                     </label>
-                                <!-- </div> -->
                             </div>
-                            <button type="submit" class="button is-small mt-4" id="search_drinks">
-                                <h3>LET'S DRINK!</h3>
+                            <button type="submit" class="searchButton" id="search_drinks">
+                                <h3>Search</h3>
                             </button>
+                        </form>
                     </div>
-                    </form>
                 </div>
-            </aside>
-            <!-- display the results as cards -->
-            <article id="results" class="column mt-4 mb-6 is-three-fifths">
-               
-            </article>
         </div>
+       <!-- <div class="drinksContainer"> -->
+        <div class="drinksContainer">
+        <img src="../assets/images/drinks.jpg" class="drinkImg" alt="drinkImg">
+       </div>
+        </aside>
+            <!-- display the results as cards -->
+            <section class="resultsSection">
+                <article id="results" class="column mt-4 mb-6 is-three-fifths"></article>
+            </section>
+   
     </main>
     <!--end of container-->
     <!-- Footer -->

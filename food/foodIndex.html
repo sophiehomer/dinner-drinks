@@ -38,100 +38,102 @@
             </div>
          </nav>
     </header>
- <!-- Main Form -->
- <main>
-    <div class="foodIndexStart">
-        <h2 class="entryText">
-            Choose a cuisine, check applicable <br>
-            dietary restrictions & browse recipes<br>
-            <i class="downArrow fa-solid fa-angle-down fa-2x"></i>
-        </h2>
-        <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg">
-    </div> 
- <aside class="container">
-  <section id="form">
-      <div class="options-container">
-            <form action="#">
-              <div id="food_options">
-                <div class="cuisineOptions">
-                <h3 class="is-size-6-mobile is-size-4 form-title">
-                 CUISINE
-                </h3>
-                <label class="radio">
-                 <input type="radio" class="cuisine" id="mexican" value="mexican">
-                    Mexican 
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="american" value="american">
-                 American
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="italian" value="italian">
-                 Italian
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="japanese" value="japanese">
-                 Japanese
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="chinese" value="chinese">
-                 Chinese
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="greek" value="greek">
-                 Greek
-              </label>
-              <label class="radio">
-                 <input type="radio" class="cuisine" id="thai" value="thai">
-                 Thai
-              </label>
-              <!-- <label class="radio">
-                 <input type="radio" class="cuisine" id="mediterranean" value="mediterranean">
-                 Mediterranean
-              </label> -->
-            </div>
-            <div class="lifestyleOptions">
-              <h2 class="is-size-6-mobile is-size-4 form-title">LIFESTYLE</h2>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="ketogenic" value="ketogenic">
-                  Ketogenic
-              </label>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="paleo" value="paleo">
-                  Paleo
-              </label>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="pescetarian" value="pescetarian">
-                  Pescetarian
-              </label>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="vegetarian" value="vegetarian">
-                  Vegetarian
-              </label>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="vegan" value="vegan">
-                  Vegan
-              </label>
-              <label class="radio">
-                  <input type="radio" class="lifestyle" id="glutenFree"
-                      value="glutenFree">
-                  Gluten Free
-              </label>
-            </div>
-            <!-- display the results as cards -->
+ <!-- Main -->
+ <main class="mainContainer">
+    <aside class="aside">
+        <div class="foodIndexStart">
+            <div class="entryTextDiv">
+                <h2 class="entryText">
+                    Select a cuisine, check applicable <br>
+                    dietary restrictions & browse recipes below<br>
+                </h2>
         </div>
-    </section>
-    </div>  
-        <button type="submit" class="searchButton" id="search_food">
-         <h3>LET'S EAT!</h3>
-     </button>
+        <!-- <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg"> -->
+
+        <div id="form">
+            <div class="options-container">
+                <form action="">
+                    <div id="food_options">
+                        <div class="cuisineOptions">
+                            <h3 class="is-size-6-mobile is-size-5 form-title">
+                                CUISINE
+                            </h3>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="mexican" value="mexican">
+                                Mexican 
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="american" value="american">
+                                American
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="italian" value="italian">
+                                Italian
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="japanese" value="japanese">
+                                Japanese
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="chinese" value="chinese">
+                                Chinese
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="greek" value="greek">
+                                Greek
+                                </label>
+                            <label class="radio">
+                                <input type="radio" name="cuisine" class="cuisine" id="thai" value="thai">
+                                Thai
+                            </label>
+                        </div>
+                        <div class="lifestyleOptions">
+                            <h2 class="is-size-6-mobile is-size-5 form-title">LIFESTYLE</h2>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="ketogenic" value="ketogenic">
+                                Ketogenic
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="paleo" value="paleo">
+                                Paleo
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="pescetarian" value="pescetarian">
+                                Pescetarian
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="vegetarian" value="vegetarian">
+                                Vegetarian
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="vegan" value="vegan">
+                                Vegan
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="lifestyle"  class="lifestyle" id="glutenFree" value="glutenFree">
+                                Gluten Free
+                            </label>
+                        </div>
+                    </div>
+                        <button type="submit" class="searchButton" id="search_food">
+                            <h3>Search</h3>
+                        </button>
+                </form>
+            </div> 
+         </div>
+       </div>
+       <!-- food image -->
+       <div class="drinksContainer">
+        <img src="../assets/images/food1.jpeg" class="foodImg" alt="foodImg"> 
+       </div>
     </aside>
  
-    <article id="results" class="column is-three-fifths">
-      <div class="message-header">
-          <p>Get started!</p>
-      </div>
-  </article>
+    <article id="results" class="resultsSection">
+        <div class="message-header">
+            <p>Select a cuisine, check applicable dietary <br>
+            restrictions and browse recipe below</p>
+        </div>
+    </article>
 </main>  
 <!-- Footer -->
 <footer class="level is-mobile">

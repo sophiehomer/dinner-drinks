@@ -62,18 +62,31 @@ header nav a {
   color: white;
 }
 
+.aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
 .foodIndexStart {
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 5%;
+  flex-direction: column;
+}
+
+.entryTextDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 30%;
+  margin-bottom: 5%;
 }
 
 .entryText{
   font-family: georgia;
-  text-align: center;
-  line-height: 2.0;
-  padding-top: 30%;
-  font-size: 20px;
+  line-height: 1.5;
+  font-size: 18px;
   color: black;
   opacity: 0;
   animation: fadeinup ease 0.4s forwards;  
@@ -91,32 +104,27 @@ header nav a {
   }
 }
 
-.downArrow {
+/* .downArrow {
   padding-top: 15%;
   height: 300px;
   opacity: 0;
   animation: fadeinup ease 0.4s forwards;  
   animation-delay: .2s;
-}
-
-#foodImg {
-  display:flex;
-  justify-content: center;
-}
+} */
 
 .foodImg {
-  margin-top: 10%;
-  width: 400px;
-  opacity: 0;
-  animation: fadeinup ease 0.4s forwards;  
-  animation-delay: .2s;
+    margin-top: 23%;
+    width: 400px;
+    opacity: 0;
+    animation: fadeinup ease 0.4s forwards;  
+    animation-delay: .2s;
 }
 
 
 
 /* --------------- CHECKBOX ---------------  */
 .form-title {
-  margin-bottom: 5%;
+  margin-bottom: 2%;
 }
 
 .container {
@@ -127,15 +135,21 @@ header nav a {
   margin-left: 10%;
 }
 
-/* #food_options {
-display: flex;
-flex-direction: row;
-} */
-
 label.radio {
   margin-left: 0% !important;
-  margin-bottom: 10%;
+  padding-bottom: 1.5%;
+  font-size: 18px;
+  font-family: sans-serif !important;
 }
+
+input[name="cuisine" ] {
+  accent-color: black;
+}
+
+input[name="lifestyle" ] {
+  accent-color: black;
+}
+
 
 .options-container {
   display: flex;
@@ -157,23 +171,20 @@ label.radio {
 .lifestyleOptions {
   display: flex;
   flex-direction: column;
-  /* margin-left: 40%; */
+  margin-top: 5%;
 }
-
-
 
 /* --------------- BUTTONS---------------  */
 
 .searchButton {
-  letter-spacing: 2px;
   font-family: sans-serif;
   border: 0px;
   font-size: 14px;
   background-color: black;
   color: white;
   font-weight: bold;
-  padding: 1% 2% 1% 2%;
-  margin-top: 1%;
+  padding: 2% 15% 2% 15%;
+  margin-top: 5%;
   margin-bottom: 5%;
 }
   
@@ -182,9 +193,6 @@ label.radio {
 }
 
 /* --------------- RESULTS ---------------  */
-/* #results {
-  padding-top: 20%;
-} */
 
 .message-header {
   background-color: white !important;
